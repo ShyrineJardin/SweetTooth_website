@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+  <link href="./output.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <title>SweetTooth</title>
+</head>
+
+<body>
+  <header id="navbar" class=" bg-[#DB97A4ff] fixed w-full h-auto top-0 left-0 z-50">
+    <nav class="container flex items-center justify-between h-16 sm:h-20">
+      <div class="flex items-center gap-0">
+        <div>
+          <img class="scale-75 md:scale-100" src="assets/img/logo.png" alt="">
+        </div>
+        <div class="font-Lobster text-4xl sm:text-2xl cursor-pointer text-[#280000]">SweetTooth</div>
+      </div>
+
+
+      <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+        <i class="ri-menu-4-line" id="hamburger"></i>
+      </div>
+
+
+      <div id="nav-menu"
+        class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-[#DB97A4ff]/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+        <ul class="flex flex-col items-center gap-8 lg:flex-row">
+          <li>
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+
+          <li>
+            <a href="#top" class="nav-link">Top Selling</a>
+          </li>
+
+          <li>
+            <a href="#review" class="nav-link">Review</a>
+          </li>
+
+          <li>
+            <a href="#order" class="nav-link">Order</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!--Home-->
+    <section id="home" class="relative">
+      <div class="container relative mt-15 sm:20 py-5">
+        <div class="flex flex-col items-center">
+          <div
+            class="text-[45px] sm:text-[70px] md:text-[90px] lg:text-[120px] xl:text-[180px] font-bold uppercase text-[#280000]/50">
+            SweetTooth</div>
+
+          <div class="relative -mt-16 sm:-mt-24  md:-mt-32 xl:-my-52">
+            <img src="assets/img/hero.png" alt="" class="w-3/4 mx-auto">
+          </div>
+
+          <div
+            class="relative xl:mt-40 flex flex-col items-center w-full gap-5 md:justify-between md:gap-4 lg:gap-0 md:flex-row">
+            <p class="max-w-80 sm:text-sm md:text-xl">
+              "Your ultimate destination for indulgent desserts, offering a delightful collection of
+              cakes, pastries, and sweet treats to satisfy every craving."
+            </p>
+            <a href="#top" class="btn">Latest Recipes</a>
+            <p class="max-w-80 md:text-right sm:text-sm md:text-xl">
+              "Your ultimate destination for indulgent desserts, offering a delightful collection of
+              cakes, pastries, and sweet treats to satisfy every craving."
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!--Top Selling-->
+
+    <section id="top" class=" bg-[#DB97A4ff]">
+      <div class="flex flex-col items-center gap-3 text-center mb-40">
+        <h2>Our Top Selling Desserts</h2>
+      </div>
+
+
+      <div class="container w-full grid grid-cols-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3">
+        <!--Card1-->
+        <div class="top_card bg-white/15 p-10 pt-24 rounded-xl relative">
+          <img src="assets/img/macaroons.png" alt="top_image"
+            class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+
+          <h3 class="pb-3 text-center">Macaron</h3>
+          <p class="pb-2">Delight in our soft, chewy macaroons—perfectly sweetened and packed with rich coconut flavor.
+            A bite-sized indulgence for any occasion.</p>
+
+          <div class="flex items-center justify-between">
+            <p class="text-xl font-semibold">PHP 350.00</p>
+            <i class="ri-shopping-bag-line text-2xl"></i>
+          </div>
+        </div>
+
+        <!--Card1-->
+        <div class="top_card bg-white/15 p-10 pt-24 rounded-xl relative">
+          <img src="assets/img/fudge.png" alt="top_image"
+            class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+
+          <h3 class="pb-3 text-center">Brownies</h3>
+          <p class="pb-2">Rich, fudgy brownies with a decadent chocolate flavor, perfectly baked for a soft, gooey
+            center. A treat you can't resist</p>
+
+          <div class="flex items-center justify-between">
+            <p class="text-xl font-semibold">PHP 200.00</p>
+            <i class="ri-shopping-bag-line text-2xl"></i>
+          </div>
+        </div>
+
+        <!--Card1-->
+        <div class="top_card bg-white/15 p-10 pt-24 rounded-xl relative">
+          <img src="assets/img/shortcake.png" alt="top_image"
+            class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+
+          <h3 class="pb-3 text-center ">Strawberry Shortcake</h3>
+          <p class="pb-2">Light, fluffy layers of sponge cake, fresh strawberries, and creamy whipped frosting— the perfect balance of sweet and refreshing</p>
+
+          <div class="flex items-center justify-between">
+            <p class="text-xl font-semibold">PHP 790.00</p>
+            <i class="ri-shopping-bag-line text-2xl"></i>
+          </div>
+        </div>
+
+        <!--Card1-->
+        <div class="top_card bg-white/15 p-10 pt-24 rounded-xl relative">
+          <img src="assets/img/cupcake.png" alt="top_image"
+            class="scale-75 w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+
+          <h3 class="pb-3 text-center">Chocolate Cupcake</h3>
+          <p class="pb-2">Moist chocolate cupcakes topped with rich, creamy frosting—a perfect bite of chocolatey
+            goodness for any sweet craving!</p>
+
+          <div class="flex items-center justify-between">
+            <p class="text-xl font-semibold">PHP 150.00</p>
+            <i class="ri-shopping-bag-line text-2xl"></i>
+          </div>
+        </div>
+
+        <!--Card1-->
+        <div class="top_card bg-white/15 p-10 pt-24 rounded-xl relative">
+          <img src="assets/img/crepe.png" alt="top_image"
+            class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+
+          <h3 class="pb-3 text-center">
+            Berries & Cream Crêpes</h3>
+          <p class="pb-2">Delicate, thin crepes filled with a medley of fresh berries and topped with a drizzle of syrup
+            and whipped cream—a light and fruity delight!</p>
+
+          <div class="flex items-center justify-between">
+            <p class="text-xl font-semibold">PHP 300.00</p>
+            <i class="ri-shopping-bag-line text-2xl"></i>
+          </div>
+        </div>
+
+        <!--Card1-->
+        <div class="top_card bg-white/15 p-10 pt-24 rounded-xl relative">
+          <img src="assets/img/cookie.png" alt="top_image"
+            class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+
+          <h3 class="pb-3 text-center">Oatmeal Raisin</h3>
+          <p class="pb-2">Soft and chewy oatmeal cookies packed with sweet raisins and a hint of cinnamon—a wholesome,
+            classic treat perfect for any time of day!</p>
+
+          <div class="flex items-center justify-between">
+            <p class="text-xl font-semibold">PHP 150.00</p>
+            <i class="ri-shopping-bag-line text-2xl"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!--Review-->
+
+    <section id="review">
+    <div>
+      <div class="flex flex-col items-center gap-3 text-center mb-8">
+        <h2>Customer's Review</h2>
+      </div>
+
+      <div class="container">
+        <div class="swiper py-12">
+          <ul class="swiper-wrapper">
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-white/15 rounded-xl p-10">
+
+                <div>
+                  <div class="flex items-center">
+                    <div>
+                      <img class="pr-3" src="assets/img/person1.png" alt="review_image">
+                    </div>
+  
+                    <div>
+                      <p class="font-semibold text-2xl text-[#B83555ff]">Stephan Gray</p>
+                      <div class="text-lg text-yellow-400 py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+
+                <div>
+                  <p>"SweetTooth never disappoints! The oatmeal raisin cookies remind me of my grandma’s recipe—soft,
+                    chewy, and full of flavor. Can’t wait to try more desserts!" </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-white/15 rounded-xl p-10">
+
+                <div class="flex items-center">
+                  <div>
+                    <img class="pr-3" src="assets/img/person2.png" alt="review_image">
+                  </div>
+
+                  <div>
+                    <p class="font-semibold text-2xl text-[#B83555ff]">Christine Swift</p>
+                    <div class="text-lg text-yellow-400 py-3">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p>"The chocolate cupcakes were absolutely delicious! Rich and decadent, with the perfect amount of
+                    frosting. I just wish they offered more vegan options."</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-white/15 rounded-xl p-10">
+
+                <div class="flex items-center">
+                  <div>
+                    <img class="pr-3" src="assets/img/person3.png" alt="review_image">
+                  </div>
+
+                  <div>
+                    <p class="font-semibold text-2xl text-[#B83555ff]">Jarred Simon</p>
+                    <div class="text-lg text-yellow-400 py-3">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p>"Their berries crepes are heavenly! Perfectly thin and packed with fresh fruit. Paired it with
+                    their signature coffee, and it was a match made in heaven."</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-white/15 rounded-xl p-10">
+
+                <div class="flex items-center">
+                  <div>
+                    <img class="pr-3" src="assets/img/person4.png" alt="review_image">
+                  </div>
+
+                  <div>
+                    <p class="font-semibold text-2xl text-[#B83555ff]">Ava Wright</p>
+                    <div class="text-lg text-yellow-400 py-3">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p>"I ordered the strawberry shortcake for a birthday party, and it was a showstopper! The cake was so
+                    light, and the strawberries were incredibly fresh. Everyone kept asking where I got it!"</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-white/15 rounded-xl p-10">
+
+                <div class="flex items-center">
+                  <div>
+                    <img class="pr-3" src="assets/img/person5.png" alt="review_image">
+                  </div>
+
+                  <div>
+                    <p class="font-semibold text-2xl text-[#B83555ff]">Evelyn Flores</p>
+                    <div class="text-lg text-yellow-400 py-3">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p>"SweetTooth is my go-to dessert shop! Their brownies are the fudgiest I’ve ever had, and the
+                    macaroons are a coconut lover’s dream. Everything tastes homemade and is always fresh!" </p>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
+
+        </div>
+      </div>
+    </div>
+
+    </section>
+    <!--Order-->
+    <section id="order" class="relative overflow-hidden">
+      <div class="container space-y-10 xl:space-y-0">
+        <div class="flex flex-col items-center lg:flex-row gap-3">
+          <div>
+            <img src="assets/img/about.png" alt="about_image">
+          </div>
+          <!--Content-->
+          <div class="flex justify-between flex-col">
+            <h1 class="text-[#280000] mb-8 text-center md lg:text-start">Order Pickup or Delivery</h1>
+            <h3 class="mb-8 text-4xl text-center lg:text-start">"Let the sweetness of each experience leave a lasting
+              impression on your heart."</h3>
+
+            <div class="flex justify-center lg:justify-start">
+              <button class="btn">Start Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-[#B83555ff] pt-20 pb-10 mb:pt-28 relative">
+    <div
+      class="container top-10 right-0 left-0  grid grid-rows-1 lg:grid-cols-3 gap-8 text-center md:text-center xl:text-start ">
+
+      <div>
+        <h2 class="mb-2 text-4xl text-[#FADED2ff]">Subscribe to Our Newsletter</h2>
+        <p class="mb-3 text-[#FADED2ff]">Subscribe to receive update, access to exclusive deals & more.</p>
+        <div class="flex flex-col xl:flex-row gap-2">
+          <input type="email" placeholder="Enter Email" class="xl:w-3/5 px-5 py-3 outline-white text-black rounded-2xl">
+          <button class="border-2 rounded-2xl px-6 py-2 w-auto border-[#56768Dff] bg-[#56768Dff] text-[#FADED2ff] xl:w-2/5">Subscribe
+            <i class="ri-send-plane-fill"></i>
+          </button>
+        </div>
+
+
+        <div class="container mt-5 mb-5">
+          <div class="border-b border-none relative">
+            <div class="text-2xl space-x-2">
+              <i class="ri-facebook-fill hover:text-yellow-100 duration-300 cursor-pointer"></i>
+              <i class="ri-twitter-x-fill hover:text-yellow-100 duration-300 cursor-pointer"></i>
+              <i class="ri-instagram-line hover:text-yellow-100 duration-300 cursor-pointer"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <!--Item-->
+        <h3 class="text-[#FADED2ff] mb-2">More Products</h3>
+        <div>
+          <p class="text-[#FADED2ff]">Cakes</p>
+          <p class="text-[#FADED2ff]">Cookies</p>
+          <p class="text-[#FADED2ff]">Candies</p>
+          <p class="text-[#FADED2ff]">Pies</p>
+          <p class="text-[#FADED2ff]">Ice Cream</p>
+        </div>
+
+      </div>
+
+
+      <div>
+        <!--Item-->
+        <h3 class="text-[#FADED2ff]">Contact Us</h3>
+        <div>
+          <p class="text-[#FADED2ff]">+639 123 4567 890</p>
+          <p class="text-[#FADED2ff]">sweettooth@gmail.com</p>
+          <p class="text-[#FADED2ff]">123 Tailwind Ave, Paranaque City, Philippines</p>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="container">
+      <p class="text-center mt-10 text-[#FADED2ff]">SweetTooth &copy; All right reserve</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"> </script>
+
+
+</body>
+
+</html>

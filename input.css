@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    @apply bg-[#DB97A4ff]	text-white font-RedHat tracking-wider;
+}
+
+.nav-link{
+    @apply text-xl font-semibold duration-300;
+}
+
+.nav-link:hover{
+    @apply text-[#280000] underline;
+}
+
+.active{
+    @apply text-[#280000] underline;
+}
+
+section{
+    @apply py-20 md:py-28;
+}
+
+h1{
+    @apply text-5xl xl:text-5xl font-semibold;
+}
+
+h2{
+    @apply text-3xl md:text-4xl xl:text-5xl font-Lobster font-medium text-[#280000];
+}
+
+h3{
+    @apply text-2xl lg:text-3xl font-Lobster text-[#B83555ff];
+}
+
+p{
+    @apply lg:text-lg sm:text-sm font-RedHat font-medium text-[#000000];
+}
+
+.btn{
+    @apply border-2 border-[#56768Dff] rounded-2xl px-6 py-2 w-auto bg-transparent bg-[#56768Dff] text-[#FADED2ff] lg:scale-110;
+}
+
+.btn:hover{
+    @apply scale-125 ;
+}
+
+.top_card:hover img{
+    @apply -top-8;
+}
+
+.swiper-pagination-bullet{
+    @apply bg-red-500 w-3 h-3;
+}
+
+
