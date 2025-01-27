@@ -30,7 +30,7 @@ h1{
 }
 
 h2{
-    @apply text-3xl md:text-4xl xl:text-5xl font-Lobster font-medium text-[#280000];
+    @apply text-2xl md:text-3xl xl:text-4xl font-Lobster font-medium text-[#280000];
 }
 
 h3{
